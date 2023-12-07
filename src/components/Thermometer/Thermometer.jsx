@@ -4,9 +4,8 @@ import { useContext } from 'react';
 import { useClimate, ClimateContext } from '../../context/ClimateContext';
 
 function Thermometer() {
-console.log(useClimate(ClimateContext))
   const {temp, setTemp} = useClimate(ClimateContext)
-  console.log(temp)
+
   return (
     <section>
       <h2>Thermometer</h2>
